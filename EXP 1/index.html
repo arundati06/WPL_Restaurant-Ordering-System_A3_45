@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Olive & Ember</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Olive & Ember</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#login">Login</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#register">Register</a></li>
+  </ul>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home" class="page">
+  <div class="hero">
+    <h1>Olive & Ember</h1>
+    <p class="tagline">Fine home-style dining, made simple</p>
+    <a href="#menu" class="btn">View Menu</a>
+  </div>
+
+  <div class="content">
+    <h2 class="section-title">Chef's Picks</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Margherita Pizza</h3>
+        <p class="desc">Fresh mozzarella, basil, tomato sauce</p>
+        <p class="price">₹349</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <h3>Grilled Burger</h3>
+        <p class="desc">Char-grilled patty, cheddar, house sauce</p>
+        <p class="price">₹279</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <h3>Alfredo Pasta</h3>
+        <p class="desc">Penne in a creamy parmesan sauce</p>
+        <p class="price">₹299</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGIN PAGE -->
+<section id="login" class="page">
+  <div class="form-box">
+    <h2>Login</h2>
+    <form action="#">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password">
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#register">Register here</a></p>
+  </div>
+</section>
+
+<!-- MENU PAGE -->
+<section id="menu" class="page">
+  <h2 class="section-title">Our Menu</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Spring Rolls</h3>
+      <p class="desc">Vegetable-stuffed rolls, sweet chilli dip</p>
+      <p class="price">₹179</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Margherita Pizza</h3>
+      <p class="desc">Fresh mozzarella, basil, tomato sauce</p>
+      <p class="price">₹349</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Grilled Burger</h3>
+      <p class="desc">Char-grilled patty, cheddar, house sauce</p>
+      <p class="price">₹279</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Butter Chicken</h3>
+      <p class="desc">Tandoori chicken in a buttery tomato gravy</p>
+      <p class="price">₹329</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Chicken Biryani</h3>
+      <p class="desc">Fragrant rice layered with spiced chicken</p>
+      <p class="price">₹319</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Veg Momos</h3>
+      <p class="desc">Steamed dumplings, spicy chutney</p>
+      <p class="price">₹169</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Caesar Salad</h3>
+      <p class="desc">Crisp lettuce, parmesan, croutons</p>
+      <p class="price">₹219</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>French Fries</h3>
+      <p class="desc">Crispy golden fries, house seasoning</p>
+      <p class="price">₹129</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Chocolate Lava Cake</h3>
+      <p class="desc">Warm molten cake, vanilla ice cream</p>
+      <p class="price">₹189</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Chocolate Milkshake</h3>
+      <p class="desc">Thick and creamy, topped with cream</p>
+      <p class="price">₹149</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Iced Coffee</h3>
+      <p class="desc">Chilled coffee blended with milk</p>
+      <p class="price">₹129</p>
+      <button class="btn add-btn">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER PAGE -->
+<section id="register" class="page">
+  <div class="form-box">
+    <h2>Create an Account</h2>
+    <form action="#">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="regemail">Email Address</label>
+      <input type="email" id="regemail" placeholder="Enter your email">
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number">
+
+      <label for="regpassword">Password</label>
+      <input type="password" id="regpassword" placeholder="Create a password">
+
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <p>Already have an account? <a href="#login">Login here</a></p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Olive & Ember Restaurant
+</footer>
+
+</body>
+</html>
