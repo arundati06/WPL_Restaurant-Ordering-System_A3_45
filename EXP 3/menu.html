@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Olive & Ember | Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bootstrap-custom.css">
+</head>
+<body>
+
+<!-- TASK 3: Navbar with dropdown + search input-group -->
+<nav class="navbar navbar-expand-lg navbar-dark ember-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="home.html">Olive & Ember</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="menu.html" id="menuDropdown" role="button" data-bs-toggle="dropdown">Menu</a>
+          <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+            <li><a class="dropdown-item" href="menu.html">Full Menu</a></li>
+            <li><a class="dropdown-item" href="home.html">Chef's Picks</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+      </ul>
+      <form class="d-flex" role="search" onsubmit="return false;">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input type="search" id="siteSearch" class="form-control" placeholder="Search the menu...">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<section id="menu" class="page">
+  <!-- TASK 1: container keeps the grid margin-aligned at every breakpoint -->
+  <div class="container">
+    <h2 class="section-title">Our Menu</h2>
+
+    <!-- TASK 2: responsive grid, 3-up on desktop (col-md-4), stacked on mobile (col-sm-12) -->
+    <div class="row g-4" id="menuGrid">
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>Spring Rolls</h3>
+        <p class="desc">Vegetable-stuffed rolls, sweet chilli dip</p>
+        <p class="price">₹179</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>Margherita Pizza</h3>
+        <p class="desc">Fresh mozzarella, basil, tomato sauce</p>
+        <p class="price">₹349</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>Grilled Burger</h3>
+        <p class="desc">Char-grilled patty, cheddar, house sauce</p>
+        <p class="price">₹279</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>Butter Chicken</h3>
+        <p class="desc">Tandoori chicken in a buttery tomato gravy</p>
+        <p class="price">₹329</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>Chicken Biryani</h3>
+        <p class="desc">Fragrant rice layered with spiced chicken</p>
+        <p class="price">₹319</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>Veg Momos</h3>
+        <p class="desc">Steamed dumplings, spicy chutney</p>
+        <p class="price">₹169</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>Caesar Salad</h3>
+        <p class="desc">Crisp lettuce, parmesan, croutons</p>
+        <p class="price">₹219</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>French Fries</h3>
+        <p class="desc">Crispy golden fries, house seasoning</p>
+        <p class="price">₹129</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>Chocolate Lava Cake</h3>
+        <p class="desc">Warm molten cake, vanilla ice cream</p>
+        <p class="price">₹189</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>Chocolate Milkshake</h3>
+        <p class="desc">Thick and creamy, topped with cream</p>
+        <p class="price">₹149</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+      <div class="col-md-4 col-sm-12"><div class="card">
+        <h3>Iced Coffee</h3>
+        <p class="desc">Chilled coffee blended with milk</p>
+        <p class="price">₹129</p>
+        <button class="btn add-btn">Add to Cart</button>
+      </div></div>
+
+    </div>
+
+    <!-- TASK 5: pagination, built and driven by script.js -->
+    <ul class="pagination" id="menuPagination"></ul>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Olive & Ember Restaurant
+</footer>
+
+<!-- TASK 5: dismissible "added to cart" alert renders here -->
+<div id="cartAlertHolder" class="alert-holder"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

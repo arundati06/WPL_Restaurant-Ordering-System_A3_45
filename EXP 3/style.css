@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #faf7f2;
+  color: #2c2c2c;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  color: #f2e8d5;
+  padding: 18px 40px;
+  letter-spacing: 1px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #c9a24b;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #c9a24b;
+  color: #1c1c1c;
+  border: none;
+  padding: 10px 26px;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background-color: #b28d3c;
+}
+
+/* Pages: only the section matching the URL hash is shown */
+.page {
+  display: none;
+  padding: 50px 40px;
+}
+
+#home {
+  display: block;
+}
+
+.page:target {
+  display: block;
+}
+
+body:has(#login:target) #home,
+body:has(#menu:target) #home,
+body:has(#register:target) #home {
+  display: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  border: 1px solid #ddd0b8;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-style: italic;
+  color: #6b6b6b;
+  margin-bottom: 22px;
+}
+
+/* Sections */
+.section-title {
+  text-align: center;
+  margin-bottom: 34px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #c9a24b;
+  margin: 12px auto 0;
+}
+
+/* Grid + cards (no images, text-only menu style) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e4dac2;
+  padding: 26px 22px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.card .desc {
+  font-size: 0.88rem;
+  color: #777;
+  margin-bottom: 12px;
+  min-height: 40px;
+}
+
+.card .price {
+  font-weight: bold;
+  color: #c9a24b;
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+
+.add-btn {
+  width: 100%;
+}
+
+/* Forms */
+.form-box {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #e4dac2;
+  padding: 36px;
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 26px;
+  letter-spacing: 1px;
+}
+
+.form-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.form-box p {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+.form-box p a {
+  color: #c9a24b;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #1c1c1c;
+  color: #cfc4b0;
+  padding: 20px;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+.page { display: block !important; }
+
+/* ---------- Task 3: Navbar + search ---------- */
+.ember-navbar {
+  background-color: #1c1c1c;
+  padding: 18px 0;
+}
+.ember-navbar .navbar-brand {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #f2e8d5;
+}
+.ember-navbar .nav-link {
+  color: #f2e8d5;
+  letter-spacing: 1px;
+}
+.ember-navbar .nav-link:hover,
+.ember-navbar .nav-link.active {
+  color: #c9a24b;
+}
+.ember-navbar .dropdown-menu {
+  background-color: #1c1c1c;
+  border: 1px solid #c9a24b;
+}
+.ember-navbar .dropdown-item {
+  color: #f2e8d5;
+  font-family: inherit;
+}
+.ember-navbar .dropdown-item:hover {
+  background-color: #c9a24b;
+  color: #1c1c1c;
+}
+.ember-navbar .input-group-text {
+  background-color: #c9a24b;
+  border: none;
+  color: #1c1c1c;
+}
+.ember-navbar .form-control {
+  border: none;
+}
+.ember-navbar .form-control:focus {
+  box-shadow: none;
+}
+
+/* ---------- Task 4: circle avatar ---------- */
+.chef-avatar {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 3px solid #c9a24b;
+}
+
+/* ---------- Task 5: alerts ---------- */
+.ember-alert {
+  border-radius: 0;
+  border-left: 4px solid #c9a24b;
+  font-family: inherit;
+}
+.alert-holder {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding: 0 40px;
+}
+
+/* ---------- Task 5: pagination ---------- */
+.pagination {
+  justify-content: center;
+  margin-top: 36px;
+}
+.page-link {
+  color: #1c1c1c;
+  font-family: inherit;
+}
+.page-item.active .page-link {
+  background-color: #c9a24b;
+  border-color: #c9a24b;
+  color: #1c1c1c;
+}
+.page-link:hover {
+  background-color: #f2e8d5;
+  color: #1c1c1c;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
